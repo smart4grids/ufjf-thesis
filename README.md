@@ -73,6 +73,8 @@ It is very likely that you will not need to interact with `thesis.tex` file, unl
 
 This template is specifically tailored for UFJF theses. However, contributions or suggestions for improvements are welcome. Please ensure any modifications adhere to UFJF's thesis formatting guidelines.
 
+I would like to ackowledge [João Pedro Peters](https://github.com/joaoppeters), for stablishing the basis for this template.
+
 ## License
 
 MIT
