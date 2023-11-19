@@ -1,0 +1,40 @@
+# LaTeX
+*.bit
+*.blg
+*.bbl
+*.lof
+*.log
+*.lot
+*.glo
+*.glx
+*.gxg
+*.gxs
+*.idx
+*.ilg
+*.ind
+*.out
+*.url
+*.svn
+*.toc
+*.aux
+*.fdb_latexmk
+*.fls
+dissertation.pdf
+*.synctex.gz
+*.aux
+*.bbl
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints
+.ipynb_checkpoints*
+__pycache__
+
+# Data
+code/data/
+
+# Poetry
+.venv
+
+# DrawIO
+*.Identifier

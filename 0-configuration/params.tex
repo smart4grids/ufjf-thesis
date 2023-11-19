@@ -1,0 +1,55 @@
+\titulo{Digite o título do trabalho, somente a primeira palavra do título e os nomes próprios com letras iniciais maiúsculas}
+\subtitulo{Digite o subtítulo do trabalho, somente os nomes próprios com letras iniciais maiúsculas} 
+
+\autor{Ettore Pureza Leonel Bigi de Aquino}
+\autorR{Pureza Leonel Bigi de Aquino, Ettore}
+
+\local{Juiz de Fora}
+\dia{dd}
+\mes{mm}
+\ano{2023}
+
+\orientador[Orientador:]{Bruno Henriques Dias}
+\orientadorR{Henriques Dias, Bruno} 
+\orientadorTitulo{Prof.}
+\orientadorDegree{D.Sc.}
+
+%\coorientador[Coorientador:]{Nome do coorientador}
+%\coorientadorR{Sobrenome, Nome do coorientador}
+%\coorientadorTitulo{Prof.} 
+%\coorientadorDegree{Dr.}
+
+\instituicao{Universidade Federal de Juiz de Fora}
+\faculdade{Faculdade de Engenharia}
+
+\area{Sistemas de Potência}
+
+\tipodocumento{2} %% 1-> TCC; 2-> Mestrado; 3-> Doutorado
+
+\ifthenelse{\equal{\inseretipodocumento}{1}}
+	{\programa{Coordenação do Curso de Engenharia Elétrica}}
+	{\programa{Programa de Pós-Graduação em Engenharia Elétrica}}
+
+\ifthenelse{\equal{\inseretipodocumento}{1}}
+	{\objeto{Trabalho de Conclusão de Curso (Graduação)}}
+	{\ifthenelse{\equal{\inseretipodocumento}{2}}
+	{\objeto{Dissertação (Mestrado)}}
+	{\objeto{Tese (Doutorado)}}
+	}
+
+\ifthenelse{\equal{\inseretipodocumento}{1}}
+	{\natureza{Trabalho de Conclusão de Curso apresentado à \insereprograma ~da \insereinstituicao ~como requisito parcial à obtenção do grau de Bacharel em Engenharia Elétrica. Modalidade: \inserearea.}}
+	{\ifthenelse{\equal{\inseretipodocumento}{2}}
+	{\natureza{Dissertação apresentada ao \insereprograma ~da \insereinstituicao ~como requisito parcial à obtenção do título de Mestre em Engenharia Elétrica. Área: \inserearea.}}
+	{\natureza{Tese apresentada ao \insereprograma ~da \insereinstituicao ~como requisito parcial à obtenção do título de Doutor em Engenharia Elétrica. Área: \inserearea.}}
+	}
+
+%% Abaixo, prencher com os dados da parte final da ficha catalografica
+
+\keywordI{Palavra-chave1} %% Digitar, dentro das { }, a primeira palavra-chave.
+\keywordII{Palavra-chave2} %% Digitar, dentro das { }, a segunda palavra-chave.
+\keywordIII{Palavra-chave3} %% Digitar, dentro das { }, a terceira palavra-chave.
+
+\finalcatalog{1. \inserekeywordI. 2. \inserekeywordII. 3. \inserekeywordIII. I. \insereorientadorR , orient. II. Título.}
+\ifnotempty{\inserecoorientador}{
+	\finalcatalog{1. \inserekeywordI. 2. \inserekeywordII. 3. \inserekeywordIII. I. \insereorientadorR, orient. II. \inserecoorientadorR, coorient. III. Título.}}

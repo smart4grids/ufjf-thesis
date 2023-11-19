@@ -1,0 +1,104 @@
+\documentclass[
+	oneside,
+	% pagestart=firstchapter,
+  english,
+	brazil
+]{abntbibufjf}
+
+% FORMATING
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{lastpage}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{microtype}
+
+% EXTRA PACKAGES
+% MATH
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{mathrsfs}
+\usepackage{icomma}
+\usepackage{bm}
+
+% TABLES
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{longtable}
+
+%FIGURES
+\usepackage[caption=false,font=normalsize]{subfig} 
+\captionsetup[figure]{position=top}
+\captionsetup[subfigure]{position=bottom}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{float}
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+%LISTS
+\usepackage{glossaries} 
+\usepackage[printonlyused]{acronym} 
+\usepackage{siunitx}
+
+%BIBLIOGRAPHY & CITATIONS
+\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=0, abnt-etal-text=it,abnt-etal-cite=3]{abntex2cite}	
+\usepackage{./0-configuration/url6023}
+\usepackage{verbatim}
+
+
+%COMMANDS
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+\pdfminorversion=7
+
+% -----------------------------------------------------------------------------
+\input{./0-configuration/params}
+% -----------------------------------------------------------------------------
+
+
+\begin{document}
+
+  %% ELEMENTOS PRÉ-TEXTUAIS
+  \include{./1-preTextual/cover}  
+  \include{./1-preTextual/aprovacao}
+  \include{./1-preTextual/dedicatoria} %% optional
+  \include{./1-preTextual/agradecimentos} %% optional
+  \include{./1-preTextual/epigrafe} %% optional
+  \include{./1-preTextual/abstract}
+  \include{./1-preTextual/resumo}
+  \include{./1-preTextual/listas} %% optional
+  \include{./1-preTextual/acronimos}
+  \include{./1-preTextual/simbolos}
+  \include{./1-preTextual/sumario}
+
+  %% ELEMENTOS TEXTUAIS
+  \textual
+  \acresetall
+  \include{./2-chapters/ch1}
+  \include{./2-chapters/ch2}
+  \include{./2-chapters/ch3}
+  \include{./2-chapters/ch4}
+  \include{./2-chapters/conclusion}
+
+  %% ELEMENTOS POS-TEXTUAIS
+  \bibliography{./bibliography}  % o nome do arquivo .bib com as referências
+
+  \begin{apendicesenv}
+  \include{./3-apendix/A}
+  \end{apendicesenv}
+
+%%% ---
+\end{document}

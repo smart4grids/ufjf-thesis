@@ -1,0 +1,28 @@
+
+\chapter{APÊNDICE - A}\label{ap:A}
+
+Equacionamentos e explicações matemáticas extensas podem ser incluídos através de apêndices e citados através de referências no texto, por examplo \eqref{eq:example}. Onde o sistema de equações que define um problema de otimização está definida:
+
+\begin{equation}\label{eq:example}
+	\begin{aligned}
+	& \text{minimize}
+	& & C_{\text{total}} = \sum_{i \in \mathcal{T}} C_{\text{thermal},i}(G_i) + C_{\text{renewable}} \\
+	& \text{s.t}
+	& & \sum_{i \in \mathcal{T}} G_i + G_{\text{renewable}} = D, \\
+	&&& G_i^{\text{min}} \leq G_i \leq G_i^{\text{max}}, \; \forall i \in \mathcal{T}, \\
+	&&& G_{\text{renewable}}^{\text{min}} \leq G_{\text{renewable}} \leq G_{\text{renewable}}^{\text{max}}
+	\end{aligned}
+\end{equation}
+	
+where:
+\begin{itemize}
+		\item $C_{\text{total}}$: Total cost of operation.
+		\item $\mathcal{T}$: Set of thermal generation units.
+		\item $C_{\text{thermal},i}$: Operational cost function of thermal unit $i$.
+		\item $G_i$: Power output of thermal unit $i$.
+		\item $C_{\text{renewable}}$: Cost associated with renewable generation integration.
+		\item $G_{\text{renewable}}$: Power output from renewable sources.
+		\item $D$: Total demand.
+		\item $G_i^{\text{min}}$ and $G_i^{\text{max}}$: Minimum and maximum output limits for thermal unit $i$, respectively.
+		\item $G_{\text{renewable}}^{\text{min}}$ and $G_{\text{renewable}}^{\text{max}}$: Minimum and maximum output limits for renewable generation, respectively.
+\end{itemize}
