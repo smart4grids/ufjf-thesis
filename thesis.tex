@@ -42,7 +42,6 @@
 \usepackage{pdflscape}
 \usepackage{rotating}
 \usepackage{float}
-\newcommand{\subfigureautorefname}{\figureautorefname}
 
 %LISTS
 \usepackage{glossaries} 
@@ -56,8 +55,9 @@
 
 
 %COMMANDS
+%\newcommand{\subfigureautorefname}{\figureautorefname}
 \newcommand\blankpage{%
-	\null
+\null
 	\thispagestyle{empty}%
 	\addtocounter{page}{-1}%
 	\newpage}
