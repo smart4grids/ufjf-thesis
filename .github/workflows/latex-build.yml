@@ -14,5 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Build and clean
-      run: make all
+    - name: Compile LaTeX document
+      uses: xu-cheng/latex-action@v3
+      with:
+        root_file: thesis.tex
+
+    - name: Upload PDF file
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDF
+        path: thesis.pdf
