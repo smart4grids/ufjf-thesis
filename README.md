@@ -1,3 +1,14 @@
+
+![Contributors](https://img.shields.io/github/contributors/smart4grids/ufjf-thesis)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/smart4grids/ufjf-thesis/latex-build.yml)
+![GitHub all releases](https://img.shields.io/github/downloads/smart4grids/ufjf-thesis/total)
+
+
+
+![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+
 # UFJF Thesis Template
 
 ## Overview
